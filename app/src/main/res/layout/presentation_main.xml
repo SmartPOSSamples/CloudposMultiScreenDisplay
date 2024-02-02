@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!--<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="35sp"
+        android:textColor="#000000"
+        android:text="This is presentation demo."
+        android:gravity="center_horizontal"
+        android:visibility="gone"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_presentation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textColor="#000000"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_dialog_middle"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:text="center"/>
+
+            <Button
+                android:id="@+id/btn_dialog_left"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:text="left"/>
+
+            <Button
+                android:id="@+id/btn_qr"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:text="show QR"/>
+
+            <Button
+                android:id="@+id/btn_qr_outofrange"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:text="not click area"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/edittext"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="input content`1"
+                android:textColorHint="@android:color/black"/>
+
+            <EditText
+                android:id="@+id/edittext2"
+                android:layout_width="500dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="input content`2"
+                android:textColorHint="@android:color/black"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/qr_demo"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+
+    <SurfaceView
+        android:id="@+id/surfaceview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="40dp"
+        android:visibility="gone"/>
+
+</FrameLayout>
